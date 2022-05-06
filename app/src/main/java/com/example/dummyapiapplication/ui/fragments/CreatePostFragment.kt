@@ -57,11 +57,6 @@ class CreatePostFragment : Fragment(R.layout.fragment_create_post) {
                 show()
             }
 
-            /*
-            viewModel.newPostsResponse=null
-            viewModel.newPostsPage=0
-             */
-
             // redirection vers le fragment de l'acceuil
             findNavController().navigate(
                 R.id.action_createPostFragment_to_mainFragment
