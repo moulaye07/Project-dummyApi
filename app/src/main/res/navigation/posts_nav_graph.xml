@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.MainFragment"
+        android:label="fragment_main"
+         >
+        <!--xmlns:tools="tools:layout="@layout/fragment_main""-->
+        <action
+            android:id="@+id/action_mainFragment_to_postFragment"
+            app:destination="@id/postFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_mainFragment_to_deletePostFragment"
+            app:destination="@id/deletePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.PostFragment"
+        android:label="fragment_post"
+         >
+        <!--tools:layout="@layout/fragment_post"-->
+        <argument
+            android:name="post"
+            app:argType="com.example.dummyapiapplication.models.Data" />
+    </fragment>
+        <!--
+        <argument
+            android:name="post"
+            app:argType="com.example.dummyapiapplication.models.Data"/>
+         -->
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.UserFragment"
+        android:label="fragment_user"
+         >
+        <!--tools:layout="@layout/fragment_user"-->
+        <action
+            android:id="@+id/action_userFragment_to_postFragment"
+            app:destination="@id/postFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_userFragment_to_deletePostFragment"
+            app:destination="@id/deletePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPostsFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.SearchPostsFragment"
+        android:label="fragment_search_posts"
+         >
+        <!--tools:layout="@layout/fragment_search_posts"-->
+        <action
+            android:id="@+id/action_searchPostsFragment_to_postFragment"
+            app:destination="@id/postFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_searchPostsFragment_to_deletePostFragment"
+            app:destination="@id/deletePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPostFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.CreatePostFragment"
+        android:label="fragment_create_post"
+         >
+        <!--tools:layout="@layout/fragment_create_post"-->
+        <action
+            android:id="@+id/action_createPostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deletePostFragment"
+        android:name="com.example.dummyapiapplication.ui.fragments.DeletePostFragment"
+        android:label="fragment_delete_post"
+         >
+        <!--tools:layout="@layout/fragment_delete_post"-->
+        <action
+            android:id="@+id/action_deletePostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+
+    <argument
+        android:name="post"
+        app:argType="com.example.dummyapiapplication.models.Data"/>
+
+</navigation>

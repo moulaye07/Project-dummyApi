@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="8dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/monContenair">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Round" />
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/userImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="User full name" />
+
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/userImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post timestamp" />
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:layout_below="@+id/userImage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/postText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timestamp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/postImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post text" />
+
+        <LinearLayout
+            android:id="@+id/lineTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tag3"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/postImage">
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="24sp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="tag 1" />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="24sp"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="tag 2" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/postImage"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="tag 3" />
+
+        <!--
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/postImage"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="tag 3" />
+
+        -->
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

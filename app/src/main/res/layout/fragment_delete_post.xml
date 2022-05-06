@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/delete_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="8dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        >
+
+
+        <TextView
+            android:id="@+id/delete_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@drawable/create_style"
+            android:textSize="20sp"
+            tools:text="Voulez-vous supprimmer ce post?" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/delete_userImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/delete_question"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Round" />
+
+        <TextView
+            android:id="@+id/delete_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_question"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@id/delete_userImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="User full name" />
+
+
+        <TextView
+            android:id="@+id/delete_timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_userName"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/delete_userImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post timestamp" />
+
+        <ImageView
+            android:id="@+id/delete_postImage"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:layout_below="@+id/delete_userImage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/delete_postText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_timestamp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/delete_postImage"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Post text" />
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/delete_line_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_postText"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/delete_postImage">
+
+            <TextView
+                android:id="@+id/delete_tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="24sp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="tag 1" />
+
+            <TextView
+                android:id="@+id/delete_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="24sp"
+                android:background="@drawable/rounded_border"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="15dp"
+                android:paddingTop="2dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="tag 2" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/delete_tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="24sp"
+            android:layout_below="@+id/delete_line_tag"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/delete_postImage"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="tag 3" />
+
+
+        <LinearLayout
+            android:id="@+id/delete_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_postImage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/delete_no"
+                android:layout_width="120dp"
+                android:layout_height="35sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/create_style"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="3dp"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                tools:text="annuler" />
+
+
+            <TextView
+                android:id="@+id/delete_yes"
+                android:layout_width="120dp"
+                android:layout_height="35sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/delete_yes"
+                android:background="@drawable/create_style"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="3dp"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:text="supprimer" />
+
+
+        </LinearLayout>
+
+
+        <!--
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/postImage"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="tag 3" />
+
+        -->
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

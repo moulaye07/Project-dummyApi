@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/createPostFragment"
+        android:title="ajouter un post"
+        android:icon="@drawable/ic_add_post"/>
+
+    <item android:id="@+id/userFragment"
+        android:title="mes posts"
+        android:icon="@drawable/ic_user"/>
+
+    <item android:id="@+id/searchPostsFragment"
+        android:title="chercher"
+        android:icon="@drawable/ic_search"/>
+
+    <item android:id="@+id/mainFragment"
+        android:title="posts"
+        android:icon="@drawable/ic_posts"/>
+
+
+</menu>
