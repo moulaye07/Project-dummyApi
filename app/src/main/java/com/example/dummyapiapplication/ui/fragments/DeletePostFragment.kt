@@ -62,12 +62,6 @@ class DeletePostFragment : Fragment(R.layout.fragment_delete_post) {
                     show()
                 }
 
-                /*
-                viewModel.newPostsResponse=null
-                viewModel.newPostsPage=0
-
-                 */
-
                 // redirection vers le fragment de l'acceuil
                 findNavController().navigate(
                     R.id.action_deletePostFragment_to_mainFragment
