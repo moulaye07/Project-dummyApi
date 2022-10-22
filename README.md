@@ -15,9 +15,3 @@ documentation: https://dummyapi.io/docs
 # Remark
 The "app-id" parameter should be sent in the header of all requests.
 You can create your own app-id on https://dummyapi.io
-
-# Group member for the project
-* HAIDARA MOULAYE TOUHAMI
-
-# Project video
-Click on the link to watch the video : https://www.youtube.com/watch?v=HUVBBEA_Jvo&ab_channel=Allemand_07
